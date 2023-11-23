@@ -10,4 +10,4 @@ Desafio da **DIO** de um jogo de jokenpô estilizado do *Yu-Gi-Oh!*
 - 🔃 Opção de reiniciar o jogo após terminá-lo.
 
 ## Versão Online
-A versão online jogo pode ser acessado no seguinte link: [[Yu-Gi-Oh! Rock, Paper & Scisors]](https://rafael-sol.github.io/desafio-yugi-oh/)
+A versão online jogo pode ser acessado no seguinte link: [[Yu-Gi-Oh! Rock, Paper & Scisors]](https://rafael-sol.github.io/desafio-yu-gi-oh/)
