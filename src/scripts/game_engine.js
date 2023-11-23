@@ -57,12 +57,12 @@ const gameState = {
 
 // Cards utilizados no jogo
 const gameCards = [];
-gameCards.push({id: 0, name: "Blue-eyed White Dragon",           element: "Attribute: Scisors", elemSrc: "../../assets/extras/scisors.png",
-    src: "../../assets/icons/dragon.png", winsFrom: [2], losesFrom: [1]});
-gameCards.push({id: 1, name: "Exodia",                  element: "Attribute: Rock", elemSrc: "../../assets/extras/rock.png",
-    src: "../../assets/icons/exodia.png", winsFrom: [0], losesFrom: [2]});
-gameCards.push({id: 2, name: "Dark Magician",  element: "Attribute: Paper", elemSrc: "../../assets/extras/paper.png",
-    src: "../../assets/icons/magician.png", winsFrom: [1], losesFrom: [0]});
+gameCards.push({id: 0, name: "Blue-eyed White Dragon",           element: "Attribute: Scisors", elemSrc: "assets/extras/scisors.png",
+    src: "assets/icons/dragon.png", winsFrom: [2], losesFrom: [1]});
+gameCards.push({id: 1, name: "Exodia",                  element: "Attribute: Rock", elemSrc: "assets/extras/rock.png",
+    src: "assets/icons/exodia.png", winsFrom: [0], losesFrom: [2]});
+gameCards.push({id: 2, name: "Dark Magician",  element: "Attribute: Paper", elemSrc: "assets/extras/paper.png",
+    src: "assets/icons/magician.png", winsFrom: [1], losesFrom: [0]});
 
 // =====================================================================
 //  EVENT LISTENERS E EVENTOS AFINS
@@ -318,7 +318,7 @@ async function createCardEnemy (cardId, cardPos) {
     const card = gameCards.find((card) => card.id === cardId);
     if (card === undefined) return;
     // Pega as informações relevantes por hora
-    const cardImage = "../../assets/icons/card-back.png"; /* card.src; */
+    const cardImage = "assets/icons/card-back.png"; /* card.src; */
     const cardIndex = card.id;
     // Criando o elemento e colocando as propriedades nele
     const divCard = document.createElement("div");
@@ -379,7 +379,7 @@ async function shuffleCardsEnemy() {
 // =====================================================================
 
 function playSound(filename, format = "m4a", volume = 100.0, loop = false) {
-    let audio = new Audio("../../assets/audios/"+ filename + "." + format);
+    let audio = new Audio("assets/audios/"+ filename + "." + format);
     audio.volume = volume / 100.0;
     audio.loop = loop;
     audio.play();
@@ -432,8 +432,8 @@ function clickEnemyCard() {
 }
 
 function clearCardInfo () {
-    gameState.view.selectedCardView.setAttribute("src", "../../assets/icons/card-front.png");
-    gameState.view.selectedCardElementInfo.setAttribute("src", "../../assets/extras/none.png");
+    gameState.view.selectedCardView.setAttribute("src", "assets/icons/card-front.png");
+    gameState.view.selectedCardElementInfo.setAttribute("src", "assets/extras/none.png");
     gameState.view.selectedCardName.innerHTML = "???";
     gameState.view.selectedCardElementName.innerHTML = "???";
 }
@@ -467,7 +467,7 @@ function newRound() {
     gameState.view.buttonContinue.classList.add("invisible");
     gameState.view.buttonReset.classList.add("invisible");
     // Reseta cards da arena
-    const srcImage = "../../assets/icons/card-back.png";
+    const srcImage = "assets/icons/card-back.png";
     gameState.view.cardPlayerArena.setAttribute("src", srcImage);
     gameState.view.cardEnemyArena.setAttribute("src", srcImage);
 }
