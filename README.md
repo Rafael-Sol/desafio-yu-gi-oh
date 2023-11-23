@@ -1,4 +1,4 @@
-# Desafio DIO: Yu-Gi-Oh
+# Desafio DIO: Yu-Gi-Oh!
 Desafio da **DIO** de um jogo de jokenpô estilizado do *Yu-Gi-Oh!*
 
 ## Características Incríveis
