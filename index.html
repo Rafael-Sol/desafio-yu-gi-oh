@@ -1,0 +1,62 @@
+<!-- INDEX.HTML DO DESAFIO DE YUGI-OH  -->
+<!-- POR RAFAEL_SOL_MAKER (RSM) -->
+<!-- EDITADO: 23/11/23 -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yugi-oh Rock, Paper & Scisors</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon/Favicon.ico">
+    <link rel="stylesheet" href="src/styles/reset.css">
+    <link rel="stylesheet" href="src/styles/rpgui_containers.css">
+    <link rel="stylesheet" href="src/styles/rpgui_buttons.css">
+    <link rel="stylesheet" href="src/styles/main.css">
+</head>
+<body>
+    <audio id="bgm" src="assets/audios/egyptian_duel.mp3" loop></audio>
+    <div class="bg"><video class="video" src="assets/video/yugi.mp4" type="video/mp4" autoplay loop muted></video></div>
+
+    <div class="container">
+        <div class="container_left">
+            <div class="inner_left framed-golden-2">
+                <div class="score_box">
+                    <p id="score_win">Win: <a>00</a></p>
+                    <p id="score_draw">Draw: <a>00</a></p>
+                    <p id="score_lose">Lose: <a>00</a></p>
+                </div>
+                <div class="card_box framed">
+                    <img id="card_image" src="assets/icons/card-front.png">
+                    <img id="card_back" src="assets/icons/card-back.png">
+                    <img id="element_icon" src="assets/extras/none.png">
+                    <button type="button" class="duel-button rpgui-button" id="select"><p>Duelo!</p></button>
+                </div>
+                <div class="card_info framed-golden">
+                    <p id="card_name">???</p>
+                    <p id="element_name">???</p>
+                </div>
+            </div>
+        </div>
+        <div class="container_right">
+            <div class="bright_01"><img src="assets/extras/light.png"></div>
+            <div class="bright_02"><img src="assets/extras/light.png"></div>
+            <div class="inner_right">
+                <div class="enemy_field framed-golden"></div>
+                <div class="duel_arena">
+                    <div class="div_player_arena"><img src="assets/icons/card-back.png" id="card_player_arena"></div>
+                    <div class="versus_arena">
+                        <p class="instructions"></p>
+                        <img class="versus_sign" src="assets/icons/millenium2.png">
+                        <button type="button" class="continue-button rpgui-button"><p>Continuar</p></button>
+                        <button type="button" class="reset-button rpgui-button"><p>Reiniciar Jogo</p></button>
+                    </div>
+                    <div class="div_enemy_arena"><img src="assets/icons/card-back.png" id="card_enemy_arena"></div>
+                </div>
+                <div class="player_field framed-golden"></div>
+            </div>
+        </div>
+    </div>
+    <script defer src="src/scripts/game_engine.js"></script>
+</body>
+</html>
