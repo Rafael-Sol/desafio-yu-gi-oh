@@ -2,7 +2,7 @@
 Desafio da **DIO** de um jogo de jokenpô estilizado do *Yu-Gi-Oh!*
 
 ## Características Incríveis
-- 🎨 Visuais melhorados utilizandeo os mesmos recursos e uns adicionais;
+- 🎨 Visuais melhorados utilizando os mesmos recursos e uns adicionais;
 - 📻 Novo efeito sonoro adicionado;
 - 🎮 Lógica reescrita do zero, muto mais robusto e sem bugs;
 - 🚩Fluxo de jogo um pouco diferente do proposto, precisando clicar em botões para progredir no jogo;
